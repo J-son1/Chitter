@@ -1,7 +1,9 @@
 # Chitter Challenge
 
 <div align="center">
+  
   <img src="./public/images/chitter-gif.gif" width="400px">
+  
 </div>
 
 ## The challenge
@@ -16,13 +18,14 @@ Write a small Twitter clone that will allow the users to post messages to a publ
 - [ ] Chitter sign-up
 
 ### User stories:
+
 ```
 As a Maker
-So that I can let people know what I am doing  
+So that I can let people know what I am doing
 I want to post a message (peep) to chitter
 
 As a maker
-So that I can see what others are saying  
+So that I can see what others are saying
 I want to see all peeps in reverse chronological order
 
 As a Maker
@@ -54,16 +57,14 @@ I want to sign up for Chitter
 1. `brew install bundler`
 1. Run `bundle install` to install the required 'gems' from the Gemfile.
 1. `brew install postgres`
-    - Follow post installation instructions.
-    - `brew service start postgresql`
-    - Create `chitter` and `chitter_test` databases using `psql`
-        - `CREATE DATABASE chitter;`
-        - `CREATE DATABASE chitter_web;`
-    - Create tables in each database using the `psql` sequences in `db/migrations`
+   - Follow post installation instructions.
+   - `brew service start postgresql`
+   - Create `chitter` and `chitter_test` databases using `psql`
+     - `CREATE DATABASE chitter;`
+     - `CREATE DATABASE chitter_web;`
+   - Create tables in each database using the `psql` sequences in `db/migrations`
 
 [chitter repo]: https://github.com/J-son1/chitter-challenge
-
-### Usage
 
 #### PostgreSQL
 
@@ -73,6 +74,7 @@ I want to sign up for Chitter
 $ psql postgres
 postgres=#
 ```
+
 ##### Commands
 
 - `postgres=# \l` - List all database tables
@@ -89,13 +91,15 @@ $ rackup
 ```
 
 #### Browser
+
 - Use `localhost:XXXX/peeps` with 4-digit port number to view chitter homepage.
 
-## Technical Approach
-
-## Notes
-
 ## Testing
+
+<details>
+<summary><b>Tests pass with 100% coverage</b></summary>
+<img width="600" src="./public/images/chitter-tests.png">
+</details>
 
 ### RSpec
 
